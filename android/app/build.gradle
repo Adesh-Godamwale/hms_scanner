@@ -77,7 +77,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.hms_scanner"
+    namespace "com.godamwale.inciflo.hms_scanner"
     defaultConfig {
         applicationId "com.hms_scanner"
         minSdkVersion rootProject.ext.minSdkVersion

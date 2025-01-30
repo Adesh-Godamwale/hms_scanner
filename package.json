@@ -11,8 +11,15 @@
   },
   "dependencies": {
     "@hmscore/react-native-hms-scan": "^2.12.0-303",
+    "@react-navigation/core": "^7.3.1",
+    "@react-navigation/native": "^5.9.4",
+    "@react-navigation/stack": "^5.14.5",
     "react": "18.3.1",
-    "react-native": "0.76.5"
+    "react-native": "0.70.0",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-reanimated": "^2.17.0",
+    "react-native-safe-area-context": "^3.2.0",
+    "react-native-screens": "3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
