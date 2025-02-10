@@ -1,9 +1,19 @@
-/**
- * @format
- */
+import HMSScan from '@hmscore/react-native-hms-scan';
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+const ScanPlugin = {
+  ScanTypes: HMSScan.ScanTypes, // Expose ScanTypes
+  Utils: {
+    startDefaultView: async (request = { scanType: HMSScan.ScanTypes.All }) => {
+      try {
+        const result = await HMSScan.ScanUtils.startDefaultView(request);
+        console.log('Scan Result:', result);
+        return result;
+      } catch (error) {
+        console.error('Scan Error:', error);
+        return null;
+      }
+    },
+  },
+};
 
-AppRegistry.registerComponent(appName, () => App);
+export default ScanPlugin;
